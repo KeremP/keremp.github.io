@@ -65,7 +65,7 @@ From there Endgame can run in either `smash` or `expose` mode.
 
 `smash` is significantly less subtle - targeting a single service or all supported AWS services, enumerating each active resource in the specified account region, and updating policies to grant access to a rogue principal. The attacker, depending on the degree of misconfiguration of the victim, may now insert backdoors that are not controlled by the victim’s IAM policies.
 
-![endgame.gif](images/endgame.gif)
+![endgame.gif](/keremp.github.io/assets/images/endgame.gif)
 
 Source: https://github.com/DavidDikker/endgame
 
