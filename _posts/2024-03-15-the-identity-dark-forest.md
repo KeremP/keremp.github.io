@@ -1,5 +1,9 @@
-
-
+---
+layout: post
+title:  "The Identity Dark Forest"
+date:   2024-03-15 14:29:36 -0400
+categories: itdr ai draft
+---
 Identity and Access management sounds pretty boring. It’s a somewhat crowded space with the major cloud providers (love or hate ‘em) selling their flavor of product with relatively similar implementation details.
 
 There is an alphabet soup of “standard” or “best” practices that you may or may not follow, zero-trust, least-privileges, how’s your identity access governance? What about your identity security posture?
