@@ -34,7 +34,7 @@ Maybe this sounds like an easy fix, and perhaps you are in disbelief that this i
 [65% of detected cloud security incidents are caused by misconfigurations](https://www.paloaltonetworks.com/resources/research/unit42-cloud-with-a-chance-of-entropy)
 (The Unit 42 group from Palo Alto Networks has a some great research on the topic)
 
-[TODO: find a better source for the second link above]
+<!-- [TODO: find a better source for the second link above] -->
 
 This is why we take an opinionated approach to identity and access security here at Pensar. Our models are trained to detect a wide range of threats, however we suggest very pointed remediation actions. You shouldn't aim for the principle of least privilege, you should just implement it.
 
@@ -106,8 +106,7 @@ Would your employees spot these emails as phishing? Would you think twice before
 What is even more interesting is how easy it is to scale such attacks horizontally across an entire organization. In the above paper, researchers targeted an entire 9,000 person organization with relative ease.
 
 **The use of highly capable LLMs unlocks attractive unit economics for threat actors.**
-
-[perhaps an atlas map here of threat-actor llm calls, etc.]
+<!-- [perhaps an atlas map here of threat-actor llm calls, etc.] -->
 
 ## **The Identity and Access Defensive Perimeter**
 
@@ -118,7 +117,7 @@ Hopefully it is clear now that relying on your employees alone to defend the acc
 
 It should also be clear that even the most seemingly benign IAM misconfiguration error can lead to critical damage dealt to your organization's cloud infrastructure.
 
-As such, it is imperative that the modern enterprise invest resources in hardening their identity and access perimeter. It is the Holtzman shield [link] that limits the impact radius of an attacker.
+As such, it is imperative that the modern enterprise invest resources in hardening their identity and access perimeter. It is the [Holtzman shield](https://en.wikipedia.org/wiki/List_of_technology_in_the_Dune_universe#Holtzman_effect) that limits the impact radius of an attacker.
 
 Identity and access defense begins with visibility. You cannot protect what you cannot see.
 
@@ -128,15 +127,14 @@ Having a unified view of access across these sources (Opus represents this view 
 
 A common visualization layer alone is not enough. Detecting erroneous or anomalous access (this comes in many flavors - configuration errors, orphan accounts/access, overly permissive privileges) is still a manual burden. Access policies and privileges are commonly assigned "by hand" and, as discussed earlier, the onus is generally on the customer to have good IAM-hygiene and not enforced by the provider or application.
 
-This is where machine learning (pardon, AI) is especially effective. For instance, at Pensar we train and use ML models to detect gaps in the identity and access defensive perimeter in real-time. These models are able to flag, for example, privilege misconfiguration errors across hundreds or even thousands [maybe thousands communicates scale better here, however do orgs really have on the order of 000s of policies and roles?] of access policies and roles (the same kind that Endgame exploits) and suggest changes to these policies that actually adhere to proper IAM hygiene.
+This is where machine learning (pardon, AI) is especially effective. For instance, at Pensar we train and use ML models to detect gaps in the identity and access defensive perimeter in real-time. These models are able to flag, for example, privilege misconfiguration errors across hundreds or even thousands of access policies and roles (the same kind that Endgame exploits) and suggest changes to these policies that actually adhere to proper IAM hygiene.
 
 We may now augment the security analyst with a silicon companion. One that is constantly and deeply scanning for defensive vulnerabilities, and not only alerting the analyst in real-time but proactively prompting them to action.
 
-[visualization of Opus/models detecting IAM errors, suggesting fixes - a la git diff ui]
-
+<!-- [visualization of Opus/models detecting IAM errors, suggesting fixes - a la git diff ui] -->
 Automation and machine learning have been deployed to modern endpoint and network protection solutions. It is time that identity and access security likewise evolves.
 
 If any of the above got you excited or scared, check out our company PensarAI. We are building the Holtzman shield for identity and access security.
 
 Kerem Proulx
-[signature here]
+<!-- [signature here] -->
