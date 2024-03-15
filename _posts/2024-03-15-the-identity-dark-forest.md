@@ -34,8 +34,9 @@ Additionally, if an attacker is able to access, for instance, an organization’
  We believe an opinionated approach to identity and access security is essential to promoting widespread IAM hygiene. There are best practices out there however, the reality is most application developers do not want to bother with manually implementing said practices. They just want to set-it-and-forget-it when it comes to access controls (and this even extends to authentication) - which consequentially leads to best practices being ignored in most cases. If IAM providers took an opinionated approach to access control, (e.g. telling their users "hey maybe don't provide wildcard access to your dynamo tables to that one IAM role") aggregate identity security posture would be in a much better state than it is today.
 
 Maybe this sounds like an easy fix, and perhaps you are in disbelief that this is even an issue. Fair enough. We thought so to.
-[99% of cloud identities are too permissive](https://unit42.paloaltonetworks.com/iam-cloud-threat-research/?utm_source=2024-ir-report-Unit42-global&utm_medium=website)
-[65% of detected cloud security incidents are caused by misconfigurations](https://www.paloaltonetworks.com/resources/research/unit42-cloud-with-a-chance-of-entropy)
+
+- [99% of cloud identities are too permissive](https://unit42.paloaltonetworks.com/iam-cloud-threat-research/?utm_source=2024-ir-report-Unit42-global&utm_medium=website)
+- [65% of detected cloud security incidents are caused by misconfigurations](https://www.paloaltonetworks.com/resources/research/unit42-cloud-with-a-chance-of-entropy)
 (The Unit 42 group from Palo Alto Networks has a some great research on the topic)
 
 <!-- [TODO: find a better source for the second link above] -->
@@ -64,7 +65,7 @@ From there Endgame can run in either `smash` or `expose` mode.
 
 `smash` is significantly less subtle - targeting a single service or all supported AWS services, enumerating each active resource in the specified account region, and updating policies to grant access to a rogue principal. The attacker, depending on the degree of misconfiguration of the victim, may now insert backdoors that are not controlled by the victim’s IAM policies.
 
-![[endgame.gif]]
+![endgame.gif](./endgame.gif)
 Source: https://github.com/DavidDikker/endgame
 
 
@@ -99,6 +100,7 @@ While the click through and data exfiltration rates are telling on their own, ta
 | --------- | ---------------- | ------------------ | -------------- | ----------- | ----------------------------------------------------------------------- |
 | Nov. 2023 | 8,995            | 4,461 (49.59%)     | 1,501 (16.69%) | **613 (6.81%)** | **Event Coordination Scam: Holiday Party Planning, New Dining Options** |
 | Oct. 2023 | 8,856            | 5,303 (59.88%)     | 2,352 (26.56%) | **646 (7.29%)** | **Conference Pictures Request, Internal HR: Urgent Request**            |
+
 Source: [*Large Language Model Lateral Spear Phishing: A Comparative Study in Large-Scale Organizational Settings*](https://arxiv.org/html/2401.09727v1)
 
 The two phishing emails with the highest rate of "data entry" (meaning victims provided sensitive data) pertained to topics unrelated to daily operations, credentials (i.e. malicious "please reset your password" notifications), and what would commonly be associated with sensitive data (one phishing email included in the study pertained to W2 verification).
